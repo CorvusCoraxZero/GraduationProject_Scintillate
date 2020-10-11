@@ -1,0 +1,27 @@
+<!--
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    &lt;!&ndash;配置环境&ndash;&gt;
+    <environments default="mysql">
+        <environment id="mysql">
+            <transactionManager type="JDBC"></transactionManager>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/ssm"/>
+                <property name="username" value="root"/>
+                <property name="password" value="root"/>
+            </dataSource>
+        </environment>
+    </environments>
+    &lt;!&ndash;引入映射配置文件&ndash;&gt;
+    <mappers>
+        &lt;!&ndash;配置文件方式&ndash;&gt;
+        &lt;!&ndash;<mapper resource="cn/itcast/dao/xxxx.xml"></mapper>&ndash;&gt;
+        &lt;!&ndash;注解方式&ndash;&gt;
+        &lt;!&ndash;<mapper class="cn.jiaxin.dao.IAccountDao"></mapper>&ndash;&gt;
+        <package name="cn.jiaxin.dao"/>&lt;!&ndash;最方便的是这个 直接扫描整个包&ndash;&gt;
+    </mappers>
+</configuration>-->
